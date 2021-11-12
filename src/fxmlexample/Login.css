@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 nov. 2021, 20:44:01
+    Author     : jose
+*/
+
+/* El display sera en bloque */
+root { 
+    display: block;
+}
+
+/* Le damos una imagen de fondo a la ventana */
+.root {
+     -fx-background-image: url("background.jpg");
+}
+
+/* Le damos a los labels:
+    Tamaño de fuente de 12 px
+    Ponemos la letra en negrita
+    Le damos color
+    Le asignamos sombreado
+*/
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+/*
+Al texto con el id welcome-text le asignamos:
+    un tamaño de 32px
+    Una fuente de la familia Arial Black
+    Color
+    Sombreado 
+*/
+#welcome-text {
+   -fx-font-size: 32px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+/*
+Al texto que muestra la informacion le damos
+    color rojo
+    negrita
+    Sombreado
+*/
+#actiontarget {
+  -fx-fill: FIREBRICK;
+  -fx-font-weight: bold;
+  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}
+
+/*
+Al boton le damos
+    Color al texto (etiqueta)
+    Famili Arial Narrow
+    Tipo de letra: negrita
+    Color de fondo degradado
+    Un sombreado
+*/
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+/*
+Al pasar el raton por el boton, el boton cambia el color de fondo
+*/
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
